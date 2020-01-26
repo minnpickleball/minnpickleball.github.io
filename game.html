@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0%;
+  background-color: #FFDE7A;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: maroon;
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 100px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: gold;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: maroon;
+  line-height: 100px;
+}
+
+.topnav .icon {
+  display: none;
+  line-height: 100px;
+}
+
+@media screen and (max-width: 750px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+#welcomebox {
+  background-color: #FFDE7A;
+  padding: 12.5%;
+	color: gold;
+  text-align: left;
+  background-image: url(https://might4right.github.io/minnpickleball/homepagegif.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#missionstate {
+    background-color: goldenrod;
+    background-image: url(C:\Users\rsb\Documents\GitHub\minnpickleball\homebackground.jpg);
+    color: maroon;
+    padding: 2%;
+    text-align: center;
+}
+
+#pioneers {
+	background-color:transparent;
+}
+}
+
+* {
+	margin: 0;
+	padding: 0%;
+
+	font-family: "Source Sans Pro"
+}
+
+nav {
+	width: 100%;
+	height: 100px;
+	background-color: white;
+}
+
+ul {
+	margin-left: 150px;
+}
+
+ul li {
+	list-style: none;
+	display: inline-block;
+	float: left;
+	line-height: 100px;
+}
+
+ul li a {
+	display: block;
+	text-decoration: none;
+	font-size: 15;
+	font-family: "Source Sans Pro";
+	font-weight: bold;
+	color: maroon;
+	padding: 0 20px;
+	background-color: white;
+}
+
+ul li a:hover {
+	color: gold;
+}
+
+meetings h1,h2,h3,p,ol {
+	margin: 0px 50px 0px 50px;
+	}
+
+#rulessummary {
+	text-align: center;
+	padding: 5%;
+	background-color: maroon
+}
+
+#ruleslist li {
+	padding-left:6.5%;
+	padding-right:6.5%;
+	list-style:decimal;
+}
+
+.google-maps {
+       position: relative;
+       padding-bottom: 75%; // aspect ratio setting
+       height: 0;
+       overflow: hidden;
+   }
+   .google-maps iframe {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100% !important;
+       height: 100% !important;
+       display: block;
+   }
+
+@media screen and (max-width: 750px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+</style>
+</head>
+<body>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active"><img src="https://pbs.twimg.com/profile_images/1088230545010520064/TJHO1B9D_400x400.jpg" width="100" height="100" align=left></a>
+  <a href=index.html>Home</a>
+    <a href="club.html">The Club</a>
+    <a href="game.html">The Game</a>
+    <a href="news.html">News and Updates</a>
+    <a href="connect.html">Connect with Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars" style="background-color: white"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<div id="gamerules">
+
+<br><br><h1 id="rulessummary" style="text-align: center; color: white">Game Rules</h1><br>
+
+	<h2>Mechanics</h2><br>
+	<p>Like most racquet sports, pickleball is all about using your paddle to keep the ball moving back and forth in a controlled sequence.</p><br>
+
+    <p>The ball can only bounce once on each side of the court before being <b>returned</b>, or sent to your opponent's side. Under certain circumstances, you can also return the ball before it bounces on your side of the court. This is called a <b>volley.</b><br><br>
+
+	<p>When a player breaks the sequence, such as by hitting the ball into the net, letting it bounce twice in a row, or sending it out of bounds, they have committed a <b>fault</b> (sometimes called an <b>error</b>.)</p><br>
+
+	<p>The time from when the ball is <i>served</i> (set in motion) to the time a fault is committed is called a <i>rally</i>. If you fault, either the other team will gain points or you/your team will lose the opportunity to serve.</p><br>
+
+	<img id="rallypicture" src="https://pbs.twimg.com/media/EEUMJrxWsAI5kRM.jpg:large" style="display: block; margin-left: auto; margin-right: auto" width="40%" align=center>
+<br><br>
+
+	<h2>Serving</h2><br>
+
+	<p>Regardless of the kind of pickleball you are playing, there are a few standard serving rules.</p><br>
+
+	<p>All serves must be underhand, and from behind the <b>baseline</b> with at least one foot. (This is the line that marks the very back of the court.)</p><br>
+
+	<p>Serves must be made <i>cross-court diagonal</i>. The ball must land within the service court at the cater-corner of your own.</p><br>
+
+	<p>The baseline, sidelines, and center line are considered in. The kitchen line is considered out.</p><br>
+
+	<p>You only have one attempt to make a successful serve, unless there is a <b>let</b>. A let is when the ball touches the net on the serve and still lands in the correct service court. If you let, you must try again.</p><br>
+
+	<h3>A beginning serving technique</h3><br>
+
+	<p>There are many different methods of serving, but this is the best one for beginners. If you are left-handed, modify sides as necessary.</p><br>
+
+	<ol id="ruleslist">
+		<li>Determine your place in the serving sequence, then announce the current score of the game. (The serving sequence and scoring depends on the type of pickleball you are playing. Both will be discussed later.)</li><br>
+		<li>Point your entire body in the direction you need to serve. Step slightly forward with your left foot. This will set you up for a driving "pivot" motion that will add depth to your serve.</li><br>
+		<li>With your left hand, hold the ball in front of your paddle. Hold the paddle in your right hand so the handle is pointing toward your upper body. Usually, this is at a ten o'clock position.</li><br>
+		<li>Let go of the ball with your left hand. At the same time, pivot with your right foot and drive the paddle forward, keeping your wrist straight.</li>
+	</ol><br>
+
+  <h2>Flow of the game</h2><br>
+	<h3>Flow of a singles game</h3><br>
+	<p>The singles serving sequence is very much like other racquet sports.</p><br>
+
+  <p>Once you receive the ball, your first serve will always be from the right court.</p><br>
+
+  <p><b><i>If you score a point</i></b>, both you <i>and</i> your opponent will switch to their other service court. You will serve the next rally along the opposite diagonal.</p><br>
+
+  <p><b><i>If you fault</i></b>, your opponent gets to serve from their own right service court. When this happens, it is called a <b>side-out</b>.</p><br>
+
+	<h3>Flow of a doubles game</h3><br>
+	<p>In doubles, the flow of the game is fundamental to scoring. A strict serving sequence ensures each teammate has the opportunity to use both service courts.</p><br>
+  <p>Once a team gains possession of the ball after a side-out, the new serving teammates receive numbers based on their court position.</p><br>
+
+  <ol id="ruleslist">
+  <li>The player on the right service court immediately after the side-out is <i>One</i>.</li><br>
+  <li>The player on the left service court immediately after the side-out is <i>Two</i>.</li>
+  </ol><br>
+
+	<p>To begin the next rally, One serves to the opposing team's right court.</p><br>
+
+  <p><b><i>When One's team scores a point</i></b>, the serving teammates switch with each other. One must now send the ball to the opposing team's left court. He/she will continue to serve and switch places until either they or their teammate fault.</p><br>
+
+  <p><b><i>If One's team faults</i></b>, One will pass the serve to Two. The teammates do not switch places.</p><br>
+
+  <p><b><i>When Two's team scores a point</i></b>, the serving teammates switch places with each other as before.</p><br>
+
+  <p><b><i>If Two's team faults</i></b>, it is a side-out. The serve goes to the other team, and the sequence repeats.</p><br>
+
+	<h3>The exception: starting a doubles game</h3><br>
+	<p>At the beginning of a doubles game, only the right-hand player on the starting team has the opportunity to serve. They are Two. If Two faults, it is a side-out. The sequence proceeds as normal, with the other team's One receiving the ball.</p><br>
+
+	<img id="rallypicture" src="https://pbs.twimg.com/media/DxzlvDwWwAUngoQ.jpg" style="display: block; margin-left: auto; margin-right: auto" width="40%" align=center>
+<br><br>
+
+	<h2>Faults and scoring</h2><br>
+
+  <h3>The two-bounce rule</h3><br>
+	<p>When the ball is served, the receiving team must let it bounce in their court before returning the serve. The serving team must then let the ball bounce in their own court. <b>Only after the ball has bounced once in each court is it legal to volley. Otherwise, it's a fault.</b></p><br>
+
+	<h3>The kitchen rules</h3><br>
+	<p>The kitchen is sometimes called the <i>non-volley zone.</i> It is the space within 7 feet on both sides of the net.</p><br>
+
+  <p><b>You cannot volley while standing in the kitchen for any reason!</b></p><br>
+
+	<p>USAPA, the governing body of pickleball in America, keeps an exhaustive list of what can constitute a kitchen fault. Some pretty lengthy videos have been made to illustrate them all; but to keep things simple, we boil them down to five basic principles.</p><br>
+
+  <p><b>A kitchen fault IS committed when:</b></p><br>
+	<ol id="ruleslist">
+	<li>the volleying player has even one foot in the kitchen and/or on the kitchen line;</li><br>
+	<li>momentum carries the volleying player, or anything they are wearing/carrying, into the kitchen;</li><br>
+	<li>a player touches the kitchen right after volleying, even if the ball is declared dead beforehand.</li></ol><br>
+
+  <p><b>A kitchen fault IS NOT committed when:</b></p><br>
+	<ol id="ruleslist"><li>there is no volley. So long as the ball bounces before you hit it, you can stand in the kitchen at <i>any</i> time.</li><br>
+	<li>the ball is over the kitchen at the moment you strike it, AND neither of your feet are in the kitchen. Remember that the kitchen is a 2D rectangle, not a 3D box.</li>
+	</ol><br>
+
+	<h3>Making line calls</h3><br>
+	<p><i>Line calls</i> are determinations regarding whether the ball is in bounds at the time it hits the ground. A few hard and fast rules can help determine if the ball is in or out of bounds.</p><br>
+
+	<ol id="ruleslist">
+  <li><b>Keep your eye on the ball.</b> When a pickleball bounces, only a small fraction of its surface area makes contact with the ground. As such, line calls in pickleball must be incredibly precise.</li><br>
+  <li><b>Consider the stage of the rally.</b> If the ball hits the kitchen line on the serve, it is a service fault, even if the ball contacts the net before going over.</li><br>
+  <li><b>Consider the lines of the court.</b> If the ball lands on an outside line, it is <i>always</i> considered in.</li><br>
+  <li><b>Consult other players, including the opposing team.</b> A good standard is that at least two players must have seen where the ball landed within a reasonable amount of time for it to be considered out.</li><br>
+  <li><b>What the opponent says usually goes.</b> Out of fairness, if both teammates on the calling side are in doubt, the ball is considered in.</li><br>
+  <li><b>If everyone is in doubt, either redo the rally or call the ball in.</b> Both of these options are ideal. The important thing is that you offer ample courtesy and the benefit of the doubt to your opponent.</li></ol><br>
+
+	<h2>Scoring</h2><br>
+
+  <h3>Tradtitional scoring</h3><br>
+	<p>A typical pickleball game is played to 11 points and won by two points. Overtime starts when the score reaches 10-10. It is played by the same rules as normal time.</p><br>
+	<p>Important to pickleball is that <b>only the serving team can score points.</b> While this rule can make games a little longer, it also makes for some riveting comebacks and upsets.</p><br>
+	<p>Scores are announced before each serve. The server's score is announced first, then the receiver's. If you are playing doubles, a third number is included in the score representing which teammate is serving; it can be 1 or 2. Refer to "Flow of a doubles game" above for more information.</p><br>
+	<p>To comply with the doubles serving sequence, the very first serve of a doubles game is always scored <i>0-0-2</i>. "2" in this case is the player in the right service court.</p><br>
+
+  <h3>Rally scoring</h3><br>
+  <p>If we're pressed on time, we may switch to rally scoring. Though this changes the flow of the game, it makes things faster and a bit more suspenseful.</p><br>
+
+  <p>Under rally scoring, any team can score points, no matter whether they are serving or receiving.</p><br>
+
+  <p><b><i>If the serving player/team scores a point,</b></i> you will change positions as normal according to the designated flow of the game.</p><br>
+
+  <p><b><i>If the serving player/team faults,</i></b> it is a side-out. There is no second server, and the players do not change service courts.</p><br>
+	</div>
+	</body>
+</html>

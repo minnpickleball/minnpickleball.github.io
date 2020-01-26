@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0%;
+	background-color: #FFDE7A;
+	font-family: "Source Sans Pro"
+}
+
+nav {
+	width: 100%;
+	height: 100px;
+	background-color: white;
+}
+	
+ul {
+	margin-left: 150px;
+}
+
+ul li {
+	list-style: none;
+	display: inline-block;
+	float: left;
+	line-height: 100px;
+}
+
+ul li a {
+	display: block;
+	text-decoration: none;
+	font-size: 15;
+	font-family: "Source Sans Pro";
+	font-weight: bold;
+	color: maroon;
+	padding: 0 20px;
+	background-color: white;
+}
+
+ul li a:hover {
+	color: gold;
+}
+
+meetings h1,h2,h3,p {
+	margin: 0px 100px 0px 100px;
+	}
+
+#rulessummary {
+	text-align: center;
+	padding: 5%;
+	background-color: maroon
+}
+
+#ruleslist li {
+	padding-left:6.5%;
+	padding-right:6.5%;
+	list-style:decimal;
+}
+
+

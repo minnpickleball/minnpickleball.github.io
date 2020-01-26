@@ -1,0 +1,67 @@
+<!ELEMENT minutes (meetingcomments, sngls,dbls,kotc)>
+
+<!ELEMENT meetingcomments (#PCDATA)>
+
+<!ELEMENT snglgame (player1, player2, gamecomments)>
+<!ELEMENT player1 (#PCDATA)>
+<!ELEMENT player2 (#PCDATA)>
+<!ELEMENT gamecomments (#PCDATA)>
+
+<!ELEMENT dblgame (startingsrv, startingrec, gamecomments)>
+<!ELEMENT startingsrv (playerleft, playerright)>
+<!ELEMENT startingrec (playerleft, playerright)>
+<!ELEMENT gamecomments (#PCDATA)>
+<!ELEMENT playerleft (#PCDATA)>
+<!ELEMENT playerright (#PCDATA)>
+
+<!ELEMENT kotc ((snglschallengers|dblschallengers))>
+<!ELEMENT snglschallengers (challenger)>
+<!ELEMENT challenger (#PCDATA)>
+<!ELEMENT dblschallengers (challengingteam)>
+<!ELEMENT challengingteam (playerleft, playerright)>
+
+<!ATTLIST meeting date CDATA #REQUIRED>
+
+<!ATTLIST player1 from CDATA #REQUIRED>
+<!ATTLIST player1 paddle CDATA #IMPLIED>
+<!ATTLIST player1 handedness CDATA #REQUIRED>
+<!ATTLIST player1 score CDATA #REQUIRED>
+
+<!ATTLIST player2 from CDATA #REQUIRED>
+<!ATTLIST player2 paddle CDATA #IMPLIED>
+<!ATTLIST player2 handedness CDATA #REQUIRED>
+<!ATTLIST player2 score CDATA #REQUIRED>
+
+<!ATTLIST startingsrv score CDATA #REQUIRED>
+<!ATTLIST playerleft from CDATA #REQUIRED>
+<!ATTLIST playerleft paddle CDATA #IMPLIED>
+<!ATTLIST playerleft handedness CDATA #REQUIRED>
+<!ATTLIST playerleft score CDATA #REQUIRED>
+<!ATTLIST playerright from CDATA #REQUIRED>
+<!ATTLIST playerright paddle CDATA #IMPLIED>
+<!ATTLIST playerright handedness CDATA #REQUIRED>
+<!ATTLIST playerright score CDATA #REQUIRED>
+
+<!ATTLIST startingrec score CDATA #REQUIRED>
+<!ATTLIST playerleft from CDATA #REQUIRED>
+<!ATTLIST playerleft paddle CDATA #IMPLIED>
+<!ATTLIST playerleft handedness CDATA #REQUIRED>
+<!ATTLIST playerleft score CDATA #REQUIRED>
+<!ATTLIST playerright from CDATA #REQUIRED>
+<!ATTLIST playerright paddle CDATA #IMPLIED>
+<!ATTLIST playerright handedness CDATA #REQUIRED>
+<!ATTLIST playerright score CDATA #REQUIRED>
+
+<!ATTLIST kotc style (singles|doubles) #REQUIRED>
+
+<!ATTLIST challenger from CDATA #REQUIRED>
+<!ATTLIST challenger paddle CDATA #IMPLIED>
+<!ATTLIST challenger handedness CDATA #REQUIRED>
+<!ATTLIST challenger finalshort CDATA #REQUIRED>
+<!ATTLIST challenger champpts CDATA #REQUIRED>
+
+<!ATTLIST challengingteam from CDATA #REQUIRED>
+<!ATTLIST challengingteam paddle CDATA #IMPLIED>
+<!ATTLIST challengingteam handedness CDATA #REQUIRED>
+<!ATTLIST challengingteam finalshort CDATA #REQUIRED>
+<!ATTLIST challengingteam champpts CDATA #REQUIRED>
